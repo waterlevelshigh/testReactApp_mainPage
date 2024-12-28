@@ -4,10 +4,9 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faList } from '@fortawesome/free-solid-svg-icons';
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
-import Button from 'react-bootstrap/Button';
+// import Dropdown from 'react-bootstrap/Dropdown';
 
-
-const Dropdown = () => {
+const HeaderDropdown = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleDropdown = () => {
@@ -35,8 +34,7 @@ const Dropdown = () => {
 
                 </button>
 
-                
-                <button className='btn btn-primary dropdown-toggle'></button>
+
 
             </div>
 
@@ -47,22 +45,35 @@ const Dropdown = () => {
                     focus:tw-outline-none"
                     role="menu"
                 >
-                    <div className="py-1" role="none">
+                    <ul className="dropdown-menu">
+                        <li><h6 className="dropdown-header">Miscellaneous</h6></li>
+                        <li><a className="dropdown-item" target="_blank" href=""></a></li>
+                        <li><a className="dropdown-item" target="_blank" href=""></a></li>
+                        <li></li>
+                        <li><h6 className="dropdown-header">Five Year Reviews</h6></li>
+                        <li><a className="dropdown-item" target="_blank" href="">First Five Year Review</a></li>
+                        <li><a className="dropdown-item" target="_blank" href="chemtronics_child\assets\documents\SecondFYR.pdf">Second Five Year Review</a></li>
+                        <li><a className="dropdown-item" target="_blank" href="chemtronics_child\assets\documents\ThirdFYR_factsheet.pdf">Third FYR Factsheet</a></li>
+                        <li><a className="dropdown-item" target="_blank" href="chemtronics_child\assets\documents\FourthFYR.pdf">Fourth Five Year Review</a></li>
+                        <li><a className="dropdown-item" target="_blank" href="chemtronics_child\assets\documents\FifthFYR.pdf">Fifth Five Year Review</a></li>
+                        {/* <!-- FUTURE DOCUMENTS HERE --> */}
+                    </ul>
+                    <div className="py-1 tw-grid-flow-row" role="none">
                         <a
-                            href="#"
+                            href="chemtronics_child\assets\documents\89_ROA_Ammendment.pdf"
                             className="tw-block tw-px-4 tw-py-2 tw-text-sm tw-text-gray-700 
                             hover:bg-gray-100"
                             role="menuitem"
                         >
-                            Account settings
+                            89 ROD Ammendment                       
                         </a>
                         <a
-                            href="#"
+                            href="chemtronics_child\assets\documents\89_ROD.pdf"
                             className="tw-block tw-px-4 tw-py-2 tw-text-sm tw-text-gray-700
                             hover:bg-gray-100"
                             role="menuitem"
                         >
-                            Support
+                            89 ROD
                         </a>
                         <a
                             href="#"
@@ -72,6 +83,13 @@ const Dropdown = () => {
                         >
                             License
                         </a>
+                        <a className="tw-block tw-px-4 tw-py-2 tw-text-sm tw-text-gray-700
+                            hover:bg-gray-100" target="_blank" href="chemtronics_child\assets\documents\2015_RemedInvestReport.pdf">2015 Final Remedial Investagative Report
+                        </a>
+
+
+
+                        
                     </div>
                 </div>
             )}
@@ -79,4 +97,4 @@ const Dropdown = () => {
     );
 };
 
-export default Dropdown;
+export default HeaderDropdown;
