@@ -1,5 +1,7 @@
-import React from 'react'
+import React from 'react';
 import logo from './logo.svg';
+import Button from 'react-bootstrap/Button';
+import MapCarousel from './MapCarousel.js'
 
 const Content = () => {
 
@@ -12,23 +14,18 @@ const Content = () => {
 
   return (
     <main>
+          <MapCarousel />
 
+          <Button variant="primary">Primary</Button>
+        
 
         <img src={logo} className="App-logo" alt="logo" ></img>
-        <p>
-            Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-            className="App-link tw-align-middle hover:tw-bg-black"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            Learn React
-        </a>
-          <h1 className="tw-text-3xl tw-font-bold tw-underline">
-              Hello world!
-          </h1>
+     
+
+
+
+     
+       
         <div className="p-3 p-md-5 text-white rounded bg-light" id="chemtronicsBlurb">
 
               <div className="row mb-3 p-1 " >
