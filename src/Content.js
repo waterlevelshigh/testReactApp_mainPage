@@ -1,5 +1,7 @@
 import React from 'react'
 import logo from './logo.svg';
+import Button from 'react-bootstrap/Button';
+
 const Content = () => {
 
     const handleNameChange = () => {
@@ -11,53 +13,58 @@ const Content = () => {
 
   return (
     <main>
+
+          <Button variant="primary">Test</Button>
+
         <img src={logo} className="App-logo" alt="logo" ></img>
         <p>
             Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
-            className="App-link"
+            className="App-link tw-align-middle hover:tw-bg-black"
             href="https://reactjs.org"
             target="_blank"
             rel="noopener noreferrer"
         >
             Learn React
         </a>
+          <h1 className="tw-text-3xl tw-font-bold tw-underline">
+              Hello world!
+          </h1>
+        <div className="p-3 p-md-5 text-white rounded bg-light" id="chemtronicsBlurb">
 
-        <div class="jumbotron p-3 p-md-5 text-white rounded bg-light" id="chemtronicsBlurb">
+              <div className="row mb-3 p-1 " >
+                  <div className="card text-light flex-md-row mb-4 box-shadow h-md-250 bg-color-blue-600">
+                      <div className="card-body d-flex flex-column align-items-start" >
+                          <strong className="d-inline-block mb-2 text-warning ">Manufacturing - Chemicals, Materials</strong>
+                          <h3 className="mb-3"> Chemtronics </h3>
 
-              <div class="row mb-3 p-1 " >
-                  <div class="card text-light flex-md-row mb-4 box-shadow h-md-250 bg-color-blue-600">
-                      <div class="card-body d-flex flex-column align-items-start" >
-                          <strong class="d-inline-block mb-2 text-warning ">Manufacturing - Chemicals, Materials</strong>
-                          <h3 class="mb-3"> Chemtronics </h3>
-
-                          <div class="position-absolute end-0 p-3 dropdown">
-                              <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <div className="position-absolute end-0 p-3 dropdown">
+                              <button className="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                   Maps
                               </button>
-                              <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" target="_self" href="chemtronics_child\index.html">Main Webmap</a></li>
+                              <ul className="dropdown-menu">
+                                  <li><a className="dropdown-item" target="_self" href="chemtronics_child\index.html">Main Webmap</a></li>
                               </ul>
                           </div>
-                          <div class="d-flex mb-3">
-                              <div class="p-2 fw-semibold fst-italic">Swannanoa, NC</div>
+                          <div className="d-flex mb-3">
+                              <div className="p-2 fw-semibold fst-italic">Swannanoa, NC</div>
 
-                              <div class="position-absolute end-0 p-2 dropdown">
-                                  <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <div className="position-absolute end-0 p-2 dropdown">
+                                  <button className="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                       Documents
                                   </button>
-                                  <ul class="dropdown-menu">
-                                      <li><h6 class="dropdown-header">Miscellaneous</h6></li>
-                                      <li><a class="dropdown-item" target="_blank" href="chemtronics_child\assets\documents\89_ROA_Ammendment.pdf">89 ROD Ammendment</a></li>
-                                      <li><a class="dropdown-item" target="_blank" href="chemtronics_child\assets\documents\89_ROD.pdf">89 ROD</a></li>
-                                      <li><a class="dropdown-item" target="_blank" href="chemtronics_child\assets\documents\2015_RemedInvestReport.pdf">2015 Final Remedial Investagative Report</a></li>
-                                      <li><h6 class="dropdown-header">Five Year Reviews</h6></li>
-                                      <li><a class="dropdown-item" target="_blank" href="chemtronics_child\assets\documents\FirstFYR.pdf">First Five Year Review</a></li>
-                                      <li><a class="dropdown-item" target="_blank" href="chemtronics_child\assets\documents\SecondFYR.pdf">Second Five Year Review</a></li>
-                                      <li><a class="dropdown-item" target="_blank" href="chemtronics_child\assets\documents\ThirdFYR_factsheet.pdf">Third FYR Factsheet</a></li>
-                                      <li><a class="dropdown-item" target="_blank" href="chemtronics_child\assets\documents\FourthFYR.pdf">Fourth Five Year Review</a></li>
-                                      <li><a class="dropdown-item" target="_blank" href="chemtronics_child\assets\documents\FifthFYR.pdf">Fifth Five Year Review</a></li>
+                                  <ul className="dropdown-menu">
+                                      <li><h6 className="dropdown-header">Miscellaneous</h6></li>
+                                      <li><a className="dropdown-item" target="_blank" href="chemtronics_child\assets\documents\89_ROA_Ammendment.pdf">89 ROD Ammendment</a></li>
+                                      <li><a className="dropdown-item" target="_blank" href="chemtronics_child\assets\documents\89_ROD.pdf">89 ROD</a></li>
+                                      <li><a className="dropdown-item" target="_blank" href="chemtronics_child\assets\documents\2015_RemedInvestReport.pdf">2015 Final Remedial Investagative Report</a></li>
+                                      <li><h6 className="dropdown-header">Five Year Reviews</h6></li>
+                                      <li><a className="dropdown-item" target="_blank" href="chemtronics_child\assets\documents\FirstFYR.pdf">First Five Year Review</a></li>
+                                      <li><a className="dropdown-item" target="_blank" href="chemtronics_child\assets\documents\SecondFYR.pdf">Second Five Year Review</a></li>
+                                      <li><a className="dropdown-item" target="_blank" href="chemtronics_child\assets\documents\ThirdFYR_factsheet.pdf">Third FYR Factsheet</a></li>
+                                      <li><a className="dropdown-item" target="_blank" href="chemtronics_child\assets\documents\FourthFYR.pdf">Fourth Five Year Review</a></li>
+                                      <li><a className="dropdown-item" target="_blank" href="chemtronics_child\assets\documents\FifthFYR.pdf">Fifth Five Year Review</a></li>
                                       {/* <!-- FUTURE DOCUMENTS HERE --> */}
                                   </ul>
                               </div>
@@ -66,8 +73,8 @@ const Content = () => {
 
                           </div>
 
-                          <div class="row py-4 mb-2">
-                              <p class="card-text opacity-75 ">
+                          <div className="row py-4 mb-2">
+                              <p className="card-text opacity-75 ">
                                   <i>From the Fourth FYR...</i><br></br>
                                       &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp " The 535-acre Superfund Site is located in a semi-rural area about eight miles east of Asheville, in the
                                       Town of Swannanoa in Buncombe County, North Carolina (Figure E-1). The Site is divided into two
@@ -80,16 +87,16 @@ const Content = () => {
                                       areas (DAs). These areas are designated as DA-10/1 1 and DA-23 (located in the FV) and DA-6, DA-7/8,
                                       DA-9 and the Acid Pit Area (APA) (located in the BV).</p>
 
-                              <a class="btn btn-md btn-secondary p-2 mb-auto" data-bs-toggle="collapse" href="#chemtronicsCollapse" role="button" aria-expanded="false" aria-controls="chemtronicsCollapse">
+                              <a className="btn btn-md btn-secondary p-2 mb-auto" data-bs-toggle="collapse" href="#chemtronicsCollapse" role="button" aria-expanded="false" aria-controls="chemtronicsCollapse">
                                   Read more...
                               </a>
-                              <div class="collapse" id="chemtronicsCollapse">
-                                  <div class="card card-body text-light">
+                              <div className="collapse" id="chemtronicsCollapse">
+                                  <div className="card card-body text-light">
 
                                       Together, these DAs occupy less than 10 acres
                                       of the Site. Solid waste material and possibly solvents were reportedly incinerated in the APA. Chemical
                                       waste and spent acid were also disposed in trenches in the APA. Chemical wastes fi*om the
-                                      manufacturing of ortho-chlorobenzylidene malononitrile (CS) and agent 3-quinuclidinyl benzilate (BZ)
+                                      manufacturing of ortho-chlorobenzylidene malononitrile (CS) and agent 3-quindinyl benzilate (BZ)
                                       were placed in metal 5 5-gallon drums and reportedly neutralized with a kill solution. These drums were
                                       buried in DA-6, DA-7/8, DA-9, and DA-10/11 along with other process wastes and solid wastes. DA-23
                                       is a former wastewater treatment biolagoon associated with Building 113 (B113). This biolagoon was

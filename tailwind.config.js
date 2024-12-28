@@ -1,8 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  prefix: 'tw-',
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'banner': 'url("../assets/images/websiteBanner.jpeg")',
+      }
+    },
   },
   plugins: [],
 }
