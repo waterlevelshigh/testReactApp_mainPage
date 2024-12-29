@@ -5,22 +5,17 @@ import MapCarousel from './MapCarousel.js'
 
 const Content = () => {
 
-    const handleNameChange = () => {
-        const names = ['Bob', 'Kevin', 'Dave'];
-        const int = Math.floor(Math.random() * 3);
-        return names[int];
-    }
-
-
   return (
     <main>
-          <MapCarousel />
+        <div className="tw-grid tw-grid-flow-row tw-auto-rows-auto">
+            
+            <MapCarousel className="" />
 
-          <Button variant="primary">Primary</Button>
+            <Button variant="primary">Primary</Button>
         
 
-        <img src={logo} className="App-logo" alt="logo" ></img>
-     
+            <img src={logo} className="App-logo" alt="logo" ></img>
+        </div>
 
 
 

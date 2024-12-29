@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'banner': 'url("../assets/images/websiteBanner.jpeg")',
+        'sludgePond' : 'url("./assets/sludge_ponds2.jpeg")',
       }
     },
   },
